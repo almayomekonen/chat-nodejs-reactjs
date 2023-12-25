@@ -1,0 +1,12 @@
+.ChatPageHeight {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.chat-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column; /* or adjust as needed */
+}

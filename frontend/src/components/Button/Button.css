@@ -1,0 +1,19 @@
+/* Button.css */
+.custom-button {
+  width: 200px; /* Set your desired width */
+  height: 40px; /* Set your desired height */
+  color: white;
+  background-color: #fa541c;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-family: "Avenir";
+  cursor: pointer;
+  transition: all 0.44s ease;
+  -webkit-transition: all 0.44s ease;
+  -moz-transition: all 0.44s ease;
+}
+
+.custom-button:hover {
+  filter: brightness(145%);
+}
