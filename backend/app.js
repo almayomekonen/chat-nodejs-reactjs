@@ -1,5 +1,7 @@
 const express = require("express");
 
+const mongoose = require("mongoose");
+
 const app = express();
 
 const bodyParser = require("body-parser");
@@ -14,4 +16,11 @@ const usersRoutes = require("./routes/users");
 
 app.use("/api/users", usersRoutes);
 
-app.listen(3000);
+mongoose
+  .connect(
+    "mongodb+srv://almayo:7Io7qZCy4UCs4jpj@cluster0.26zhx4l.mongodb.net/user-chat"
+  )
+  .then(() => {
+    app.listen(3000);
+  })
+  .catch((err) => console.log(err));
