@@ -20,7 +20,7 @@ const ChatsPage = (props) => {
       ) : (
         <div className="chat-content">
           <PrettyChatWindow
-            projectId="5beff884-8489-44f9-a6b7-ccb30ebfa72d"
+            projectId="d4462358-b86d-432a-bf0a-5bb1be431102"
             username={props.user.username}
             secret={props.user.secret}
           />

@@ -7,6 +7,5 @@ const routes = express.Router();
 const usersControllers = require("../controllers/users");
 
 routes.post("/authenticate", check(), usersControllers.authUsers);
-routes.post("/authenticate", check(), usersControllers.validateUsers);
 
 module.exports = routes;
